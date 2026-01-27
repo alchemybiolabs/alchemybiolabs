@@ -1,14 +1,18 @@
 import heroVisual from "@/assets/hero-visual.jpg";
+import { useParallax } from "@/hooks/useParallax";
 
 export const HeroSection = () => {
+  const { ref, offset } = useParallax(0.4);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Abstract background image */}
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Abstract background image with parallax */}
       <div className="absolute inset-0">
         <img
           src={heroVisual}
           alt=""
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover opacity-70 scale-110"
+          style={{ transform: `translateY(${offset}px) scale(1.1)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
       </div>
