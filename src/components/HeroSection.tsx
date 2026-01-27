@@ -16,7 +16,7 @@ export const HeroSection = () => {
       <div className="section-container relative z-10 py-32 md:py-40">
         <div className="max-w-4xl">
           <h1 className="heading-hero animate-fade-in">
-            Programmable therapeutic materials
+            Programmable Therapeutic Precision
           </h1>
           <p className="body-subtle mt-8 max-w-2xl animate-fade-in-delay-1">
             Building next-generation systems for therapeutic signals to function where they historically fail.
