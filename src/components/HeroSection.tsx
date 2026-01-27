@@ -1,11 +1,16 @@
-import { AbstractFlowGraphic } from "./AbstractFlowGraphic";
+import heroVisual from "@/assets/hero-visual.jpg";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Abstract background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <AbstractFlowGraphic variant="hero" />
+      {/* Abstract background image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroVisual}
+          alt=""
+          className="w-full h-full object-cover opacity-70"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
       </div>
 
       <div className="section-container relative z-10 py-32 md:py-40">

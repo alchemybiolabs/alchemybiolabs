@@ -1,4 +1,4 @@
-import { AbstractFlowGraphic } from "./AbstractFlowGraphic";
+import flowVisual from "@/assets/flow-visual.jpg";
 import { useInView } from "../hooks/useInView";
 
 export const ApproachSection = () => {
@@ -10,8 +10,13 @@ export const ApproachSection = () => {
       className="relative py-32 md:py-40 overflow-hidden border-t border-divider"
     >
       {/* Abstract flow background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <AbstractFlowGraphic variant="flow" />
+      <div className="absolute inset-0">
+        <img
+          src={flowVisual}
+          alt=""
+          className="w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-background via-background/80 to-background/60" />
       </div>
 
       <div className="section-container relative z-10">
