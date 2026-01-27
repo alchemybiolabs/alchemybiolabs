@@ -1,20 +1,26 @@
 import disruptionVisual from "@/assets/disruption-visual.jpg";
 import { useInView } from "../hooks/useInView";
+import { useParallax } from "@/hooks/useParallax";
 
 export const ProblemSection = () => {
-  const { ref, isInView } = useInView({ threshold: 0.3 });
+  const { ref: inViewRef, isInView } = useInView({ threshold: 0.3 });
+  const { ref: parallaxRef, offset } = useParallax<HTMLElement>(0.3);
 
   return (
     <section 
-      ref={ref}
+      ref={(el) => {
+        (inViewRef as React.MutableRefObject<HTMLElement | null>).current = el;
+        (parallaxRef as React.MutableRefObject<HTMLElement | null>).current = el;
+      }}
       className="relative py-32 md:py-40 overflow-hidden"
     >
-      {/* Abstract disruption background */}
+      {/* Abstract disruption background with parallax */}
       <div className="absolute inset-0">
         <img
           src={disruptionVisual}
           alt=""
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover opacity-50 scale-110"
+          style={{ transform: `translateY(${offset}px) scale(1.1)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/60" />
       </div>
