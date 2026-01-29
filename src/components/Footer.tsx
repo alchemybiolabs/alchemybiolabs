@@ -12,7 +12,7 @@ export const Footer = () => {
             </p>
           </div>
           <a 
-            href="mailto:contact@alchemybio.com" 
+            href="mailto:colin@alchemybio.co" 
             className="text-sm text-subtle hover:text-foreground transition-colors duration-300"
           >
             Contact
