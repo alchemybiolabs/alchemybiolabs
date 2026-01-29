@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -20,10 +21,16 @@ export const Header = () => {
           : "py-6"
       }`}
     >
-      <div className="section-container">
-        <span className="text-base font-medium tracking-tight">
+      <div className="section-container flex items-center justify-between">
+        <Link to="/" className="text-base font-medium tracking-tight hover:opacity-70 transition-opacity">
           AlchemyBio
-        </span>
+        </Link>
+        <Link 
+          to="/our-story" 
+          className="text-sm text-subtle hover:text-foreground transition-colors duration-300"
+        >
+          Our Story
+        </Link>
       </div>
     </header>
   );
