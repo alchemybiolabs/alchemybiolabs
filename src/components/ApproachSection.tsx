@@ -34,13 +34,6 @@ export const ApproachSection = () => {
           >
             We design therapeutic systems that are stable where they should be and responsive where they must be.
           </p>
-          <p 
-            className={`body-subtle mt-6 transition-all duration-700 delay-100 ${
-              isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            Our platform focuses on preserving signal integrity and enabling activation only under disease-relevant conditions.
-          </p>
         </div>
       </div>
     </section>
