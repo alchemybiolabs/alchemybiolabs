@@ -7,22 +7,22 @@
 @layer base {
   :root {
     --background: 212 26% 24%;
-    --foreground: 0 0% 100%;
+    --foreground: 0 89% 64%;
 
     --card: 212 24% 28%;
-    --card-foreground: 0 0% 100%;
+    --card-foreground: 0 89% 64%;
 
     --popover: 212 24% 28%;
-    --popover-foreground: 0 0% 100%;
+    --popover-foreground: 0 89% 64%;
 
     --primary: 0 89% 64%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 212 22% 30%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary-foreground: 0 89% 64%;
 
     --muted: 212 18% 33%;
-    --muted-foreground: 0 0% 88%;
+    --muted-foreground: 0 89% 64%;
 
     --accent: 0 89% 64%;
     --accent-foreground: 0 0% 100%;
@@ -37,32 +37,32 @@
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --text-subtle: 0 0% 84%;
-    --text-muted: 0 0% 72%;
+    --text-subtle: 0 89% 64%;
+    --text-muted: 0 89% 64%;
     --divider: 212 16% 38%;
     --surface-elevated: 212 24% 28%;
   }
 
   .dark {
     --background: 212 26% 24%;
-    --foreground: 0 0% 100%;
+    --foreground: 0 89% 64%;
     --card: 212 24% 28%;
-    --card-foreground: 0 0% 100%;
+    --card-foreground: 0 89% 64%;
     --popover: 212 24% 28%;
-    --popover-foreground: 0 0% 100%;
+    --popover-foreground: 0 89% 64%;
     --primary: 0 89% 64%;
     --primary-foreground: 0 0% 100%;
     --secondary: 212 22% 30%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary-foreground: 0 89% 64%;
     --muted: 212 18% 33%;
-    --muted-foreground: 0 0% 88%;
+    --muted-foreground: 0 89% 64%;
     --accent: 0 89% 64%;
     --accent-foreground: 0 0% 100%;
     --border: 212 17% 42%;
     --input: 212 17% 42%;
     --ring: 0 89% 64%;
-    --text-subtle: 0 0% 84%;
-    --text-muted: 0 0% 72%;
+    --text-subtle: 0 89% 64%;
+    --text-muted: 0 89% 64%;
     --divider: 212 16% 38%;
     --surface-elevated: 212 24% 28%;
   }
